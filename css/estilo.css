@@ -9,19 +9,29 @@
 header {
     background-color: #fdf9c4;
     padding: 10px;
-    height: 70px;
+    height: 80px;
     position: sticky;
     top: 0;
     z-index: 1;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
     opacity: 90%;
 }
 
+.tituloLogo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.barraNavegacion {
+    order: 3;
+}
+
 .logo {
-    height: 50px;
+    height: 60px;
     order: 1;
     padding: 3px;
 }
@@ -35,13 +45,6 @@ a {
 
 h1 {
     font-family: 'Whisper', cursive;
-    order: 2;
-    position: absolute;
-    left: 80px;
-}
-
-.barraNavegacion {
-    order: 3;
 }
 
 .barraNavegacion a {
@@ -54,12 +57,6 @@ h1 {
 
 .barraNavegacion a:hover {
     background-size: 100% 2px;
-}
-
-.barraNavegacion ul li {
-    display: inline-block;
-    list-style-type: none;
-    font-family: 'Roboto', sans-serif;
 }
 
 /* INICIO/INDEX */
@@ -126,6 +123,7 @@ h1 {
 }
 
 .actividadTalleres {
+    background-color: white;
     font-family: 'Roboto', sans-serif;
     font-size: 1.25rem;
     text-align: center;
@@ -138,10 +136,12 @@ h1 {
 }
 
 .actividadTalleres ul {
+    padding: 0px 5px 0px 5px;
    list-style-type: none;
 }
 
 .actividad {
+    background-color: white;
     font-family: 'Roboto', sans-serif;
     font-size: 1rem;
     text-align: center;
@@ -217,13 +217,16 @@ h1 {
 
 /* BIOGRAFIA */
 
-#seccionUno h2 {
+#seccionUno {
     background-color: #ffda9e;
+}
+
+#seccionUno h2 {
     height: 100px;
     font-family: 'Whisper', cursive;
     font-size: 2.5rem;
     text-align: center;
-    padding-top: 40px;
+    padding-top: 30px;
 }
 
 .biografia h3 {
@@ -324,21 +327,31 @@ h1 {
 /* CLASES */
 
 #seccionDos {
-    display: grid;
-    grid-template-areas:
-    "tituloCentral tituloCentral"
-    "imagenClases clases"
-    "beneficios imagenBeneficios" ;
+    background-color: #ffda9e;
+}
+
+.clases {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 50px 40px 50px 40px;
+    background-color: #fdf9c4;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+}
+
+.clases div {
+    padding: 0px 30px 0px 30px;
 }
 
 .tituloCentral {
-    grid-area: tituloCentral;
     background-color: #ffda9e;
     height: 100px;
     font-family: 'Whisper', cursive;
     font-size: 2.5rem;
     text-align: center;
-    padding-top: 40px;
+    padding-top: 30px;
 }
 
 .clases h3 {
@@ -348,20 +361,11 @@ h1 {
     padding-bottom: 10px;
 }
 
-.clases {
-    padding: 70px 40px 50px 40px;
-    background-color: #fdf9c4;
-    font-family: 'Roboto', sans-serif;
-    line-height: 1.6;
-    grid-area: clases;
-}
-
 .imagenClases {
-    padding: 70px 20px 20px 20px;
+    padding: 30px 20px 20px 20px;
     background-color: #fdf9c4;
     display: flex;
     justify-content: center;
-    grid-area: imagenClases;
 }
 
 .imagenClases img {
@@ -372,21 +376,27 @@ h1 {
     font-family: 'Whisper', cursive;
     font-size: 2rem;
     text-align: center;
+    padding-bottom: 10px;
 }
 
 .beneficios {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
     background-color: #ffda9e;
     font-family: 'Roboto', sans-serif;
-    padding: 40px 0px 0px 100px;
     line-height: 2.5;
-    grid-area: beneficios;
+}
+
+.beneficios div {
+    margin-right: 100px;
+    padding-top: 50px;
 }
 
 .imagenBeneficios {
     background-color: #ffda9e;
     display: flex;
     justify-content: center;
-    grid-area: imagenBeneficios;
 }
 
 .imagenBeneficios img {
@@ -398,6 +408,7 @@ h1 {
 /* HORARIOS */
 
 #mainHorarios {
+    background-color: #ffda9e;
     display: grid;
     grid-template-areas:
     "tituloHorarios tituloHorarios"
@@ -409,7 +420,7 @@ h1 {
     height: 100px;
     font-family: 'Whisper', cursive;
     font-size: 2.5rem;
-    padding: 40px 0px 0px 50px;
+    padding: 30px 0px 0px 50px;
     grid-area: tituloHorarios;
 }
 
@@ -449,6 +460,7 @@ h1 {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+    padding: 70px 50px 0px 0px;
     grid-area: aclaraciones;
     border-bottom: #ffda9e 5px solid;
 }
@@ -456,6 +468,7 @@ h1 {
 /* CONTACTO */
 
 #mainContacto {
+    background-color: #ffda9e;
     display: grid;
     grid-template-areas: 
     "titulo titulo"
@@ -469,7 +482,7 @@ h1 {
     height: 100px;
     font-family: 'Whisper', cursive;
     font-size: 2.5rem;
-    padding: 40px 0px 0px 50px;
+    padding: 30px 0px 0px 50px;
     grid-area: titulo;
 }
 
@@ -530,7 +543,7 @@ footer {
 
 footer h4 {
     font-family: 'Whisper', cursive;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     display: inline-block;
     order: 2;
     padding: 10px 300px 20px 10px;
@@ -577,9 +590,6 @@ footer h4 {
 }
 
 @media (max-width:1023px) {
-    .barraNavegacion {
-        display: none;
-    }
 
     /* index */
 
@@ -644,26 +654,22 @@ footer h4 {
    
     /* clases */
 
-    #seccionDos {
-        display: grid;
-        grid-template-areas:
-        "tituloCentral"
-        "imagenClases"
-        "clases"
-        "imagenBeneficios" 
-        "beneficios" ; 
-        justify-content: center;
-    }
-
     .beneficios {
         padding-top: 0px;
         padding-left: 40px;
+        flex-flow: row wrap;
+        align-items: center;
     }   
 
+    .beneficios div {
+        padding-top: 10px;
+    }
+
     .clases {
-        padding: 20px 35px 10px 35px;
-        max-width: 90%;
-    }       
+        padding: 0px 35px 10px 35px;
+        flex-flow: row wrap;
+        align-items: center;
+    } 
 
     .imagenClases img {
         max-width: 90%;
@@ -671,8 +677,7 @@ footer h4 {
 
     .imagenBeneficios img {
         max-width: 90%;
-        padding-top: 30px;
-        padding-bottom: 10px;
+        padding: 10px 60px 10px 0px;
     }
 
     .imagenClases {
@@ -693,12 +698,15 @@ footer h4 {
         height: 500px;
     }
 
+    .aclaraciones h3{
+        padding-left: 30px;
+    }
+
     .aclaraciones {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        padding-left: 70px;
-        padding-bottom: 10px;
+        padding: 10px 40px 10px 70px;
     }
 
     /* contacto */
@@ -728,7 +736,7 @@ footer h4 {
 
 @media (max-width:600px) {
     h1 {
-        font-size: 1.25rem;
+        font-size: 1.1rem;
     }
 
     .indexFondo h2 {
