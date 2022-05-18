@@ -27,7 +27,25 @@ header {
 }
 
 .barraNavegacion {
+    background-color: #fdf9c4;
     order: 3;
+}
+
+.barraNavegacion a {
+    background-color: #fdf9c4;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .3s;
+    color: black;
+    text-align: center;
+}
+
+.barraNavegacion a:hover {
+    background-size: 100% 2px;
+    opacity: 80%;
+    color:black;
 }
 
 .logo {
@@ -43,21 +61,17 @@ a {
     text-transform: uppercase;
 }
 
-h1 {
+a:hover {
+    opacity: 80%;
+    color:black;
+}
+
+h1  {
     font-family: 'Whisper', cursive;
+    font-weight: bolder;
+    font-size: 2.2rem;
 }
 
-.barraNavegacion a {
-    background-image: linear-gradient(currentColor, currentColor);
-    background-position: 0% 100%;
-    background-repeat: no-repeat;
-    background-size: 0% 2px;
-    transition: background-size .3s;
-}
-
-.barraNavegacion a:hover {
-    background-size: 100% 2px;
-}
 
 /* INICIO/INDEX */
 
@@ -239,12 +253,7 @@ h1 {
 .biografia div {
     width: 800px;
     order: 2;
-    margin: 10px 15px 20px 10px;
-}
-
-.biografia figure {
-    display: flex;
-    justify-content: center;
+    margin: 10px 30px 20px 30px;
 }
 
 .biografia img {
@@ -342,11 +351,11 @@ h1 {
 }
 
 .clases div {
-    padding: 0px 30px 0px 30px;
+    width: 750px;
+    padding: 0px 20px 0px 20px;
 }
 
 .tituloCentral {
-    background-color: #ffda9e;
     height: 100px;
     font-family: 'Whisper', cursive;
     font-size: 2.5rem;
@@ -409,47 +418,39 @@ h1 {
 
 #mainHorarios {
     background-color: #ffda9e;
-    display: grid;
-    grid-template-areas:
-    "tituloHorarios tituloHorarios"
-    "tabla aclaraciones" ;
 }
 
 .tituloHorarios {
-    background-color: #ffda9e;
     height: 100px;
     font-family: 'Whisper', cursive;
     font-size: 2.5rem;
     padding: 30px 0px 0px 50px;
-    grid-area: tituloHorarios;
 }
 
-#horarios {
-    background-color: #fdf9c4;
-    grid-area: tabla;
-    border-bottom: #ffda9e 5px solid;
-    height: 600px;
+.horarios table {
+    padding: 10px 50px 10px 50px;
+    width: 900px;
 }
 
-#horarios table, th, td {
-    border: 1px black groove;
-}
-
-#horarios table {
-    height: 400px;
-    width: 700px;
-}
-
-#horarios div {
+.horarios {
     font-family: 'Roboto', sans-serif;
     background-color: #fdf9c4;
-    padding: 40px 0px 50px 60px;
+    border-bottom: #ffda9e 5px solid;
+    padding: 40px 0px 20px 60px;
     text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+
+.horarios div {
+    width: 300px;
 }
 
 .aclaraciones h3 {
     font-family: 'Whisper', cursive;
     font-size: 2rem;
+    padding-left: 40px;
 }
 
 .aclaraciones {
@@ -459,9 +460,7 @@ h1 {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: center;
-    padding: 70px 50px 0px 0px;
-    grid-area: aclaraciones;
+    padding: 30px 0px 0px 40px;
     border-bottom: #ffda9e 5px solid;
 }
 
@@ -478,7 +477,6 @@ h1 {
 }
 
 #mainContacto h2 {
-    background-color: #ffda9e;
     height: 100px;
     font-family: 'Whisper', cursive;
     font-size: 2.5rem;
@@ -509,7 +507,7 @@ h1 {
 }
 
 .frente p {
-    padding: 50px 30px 45px 0px;
+    padding: 50px 30px 30px 0px;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -642,10 +640,6 @@ footer h4 {
         margin-bottom: 20px;
     }
 
-    .biografia img {
-        max-width: 90%;
-    }
-
     #seccionUno h2, #seccionDos h2, .tituloHorarios, #mainContacto h2 {
         font-size: 2rem;
         height: 70px;
@@ -671,31 +665,19 @@ footer h4 {
         align-items: center;
     } 
 
-    .imagenClases img {
-        max-width: 90%;
-    }
-
     .imagenBeneficios img {
-        max-width: 90%;
-        padding: 10px 60px 10px 0px;
+        padding: 10px 40px 10px 0px;
     }
 
     .imagenClases {
-        padding: 40px 0px 0px 0px;
+        padding-top: 40px;
     }
 
     /* HORARIOS */
 
-    #mainHorarios {
-        display: grid;
-        grid-template-areas:
-        "tituloHorarios"
-        "tabla" 
-        "aclaraciones" ;
-    }
-
-    #horarios {
-        height: 500px;
+    .horarios {
+        flex-wrap: wrap;
+        justify-content: flex-start;
     }
 
     .aclaraciones h3{
@@ -706,7 +688,7 @@ footer h4 {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        padding: 10px 40px 10px 70px;
+        padding: 30px 40px 30px 70px;
     }
 
     /* contacto */
@@ -736,7 +718,11 @@ footer h4 {
 
 @media (max-width:600px) {
     h1 {
-        font-size: 1.1rem;
+        font-size: 1.3rem;
+    }
+
+    .barraNavegacion a {
+        font-size: 0.6rem;
     }
 
     .indexFondo h2 {
@@ -745,7 +731,7 @@ footer h4 {
     }
 
     .logo {
-        height: 40px;
+        height: 30px;
     }
 
     footer h4 {
@@ -766,7 +752,7 @@ footer h4 {
     /* horarios */
 
     .aclaraciones {
-        padding: 0px 400px 10px 50px;
+        padding: 30px 40px 30px 30px;
     }
 
 }
