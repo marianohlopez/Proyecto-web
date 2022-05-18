@@ -640,10 +640,10 @@ footer h4 {
         margin-bottom: 20px;
     }
 
-    #seccionUno h2, #seccionDos h2, .tituloHorarios, #mainContacto h2 {
-        font-size: 2rem;
+    #seccionUno h2, #seccionDos h2, #mainContacto h2 {
+        font-size: 1.8rem;
         height: 70px;
-        padding-top: 30px;
+        padding-top: 20px;
     } 
    
     /* clases */
@@ -750,6 +750,12 @@ footer h4 {
     }
 
     /* horarios */
+
+    .tituloHorarios {
+        font-size: 1.8rem;
+        height: 70px;
+        padding-top: 5px;
+    }
 
     .aclaraciones {
         padding: 30px 40px 30px 30px;
