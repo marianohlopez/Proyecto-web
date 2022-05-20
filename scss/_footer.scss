@@ -1,0 +1,57 @@
+/* FOOTER */
+
+footer {
+    background-color: $color-fondo-1;
+    padding: 15px;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+
+    h4 {
+        font-family: 'Whisper', cursive;
+        font-size: 1.7rem;
+        display: inline-block;
+        order: 2;
+        padding: 10px 300px 20px 10px;
+    }
+
+    .logo {
+        height: 60px;
+        order: 1;
+        padding: 3px;
+    }
+
+    .direccion {
+        font-family: 'Roboto', sans-serif;
+        line-height: 1.6;
+        order: 3;
+        padding: 10px 100px 20px 10px;
+    }
+    
+    .botones {
+        order: 4;
+
+        .botonFacebook {
+            display: inline-block;
+
+            img {
+                width: 70px;
+            }
+        }
+        
+        .botonInstagram {
+            display: inline-block;
+
+            img {
+                width: 70px;
+                padding-bottom: 2px;
+            }
+        }  
+    }
+}
+
+
+
+
+
+
