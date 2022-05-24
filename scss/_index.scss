@@ -1,0 +1,152 @@
+/* INICIO/INDEX */
+
+.indexFondo {
+    background-image: url(../img/imagendefondo.jpg);
+    background-size: cover;
+    height: 800px;
+    opacity: 90%;
+    animation-name: titulo;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+
+    @keyframes titulo {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 90%;
+        }
+    }
+
+    h2 {
+        font-family: 'Whisper', cursive;
+        text-align: center;
+        font-size: 2.5rem;
+        padding-top: 30px;
+        letter-spacing: 2px;
+        opacity: 90%;
+    }
+}
+
+#seccionActividades {
+    background-color: #fdf9c4;
+    grid-area: actividades;
+
+    h2 {
+        font-family: 'Whisper', cursive;
+        text-align: center;
+        font-size: 2.5rem;
+        padding: 10px;
+    }
+
+    h3 {
+        font-size: 1.75rem;
+    }
+}
+
+
+.actividades {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+
+    .actividadTalleres {
+        background-color: white;
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.25rem;
+        text-align: center;
+        border: 1px solid black;
+        margin: 20px;
+        padding: 10px 50px 6px 50px;
+        border-radius: 15px;
+        line-height: 1.6;
+        box-shadow: 5px 5px 10px;
+
+        ul {
+            padding: 0px 5px 0px 5px;
+            list-style-type: none;
+        }
+    }
+
+    .actividad {
+        background-color: white;
+        font-family: 'Roboto', sans-serif;
+        font-size: 1rem;
+        text-align: center;
+        border: 1px solid black;
+        border-radius: 15px;
+        margin: 20px;
+        padding: 10px;
+        box-shadow: 5px 5px 10px;
+    }
+
+    .yoga {
+        img {
+            opacity: 85%;
+            max-width: 90%;
+        }
+    }
+
+    .stretching {
+        img {
+            opacity: 85%;
+            max-width: 90%;
+        }
+    }
+}
+
+#seccionExperiencia {
+    background-color: #ffda9e;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+
+    div {
+        width: 700px;
+        margin: 0px 20px 10px 20px;
+        order: 2;
+        max-width: 90%;
+
+        h2 {
+            font-family: 'Whisper', cursive;
+            text-align: center;
+            font-size: 2.5rem;
+            padding: 10px;
+        }
+
+        p {
+            padding-bottom: 40px;
+        }
+
+        .sobreNosotros {
+            a {
+                font-style: italic;
+                text-transform: initial;
+                border: 1px black solid;
+                border-radius: 4px;
+                background-image: linear-gradient(to right, #fabfb7, #fdf9c4);
+                padding: 3px;
+
+                &:hover {
+                    padding: 5px
+                }
+            }
+        }
+    }
+
+    figure {
+        margin: 20px 10px 10px 35px;
+        order: 1;
+
+        img {
+            border-radius: 30px;
+            max-width: 90%;
+        }
+    }
+}

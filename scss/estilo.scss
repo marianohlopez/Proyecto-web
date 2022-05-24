@@ -1,185 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;1,100&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Whisper&display=swap');
 
-* {
-    margin: 0;
-    padding: 0;
-}
-
-@import "variables";
-@import "header";  
-@import "footer";
-
-
-
-a {
-    text-decoration: none;
-    font-weight: bold;
-    color: black;
-    text-transform: uppercase;
-
-    &:hover {
-        opacity: 80%;
-        color: black;
-    }
-}
-
-
-/* INICIO/INDEX */
-
-#index {
-    background-color: #fdf9c4;
-    display: grid;
-    grid-template-areas:
-    "indexFondo"
-    "actividades"
-    "experiencia";
-}
-
-.indexFondo {
-    background-image: url(../img/imagendefondo.jpg);
-    background-size: cover;
-    height: 800px;
-    opacity: 90%;
-    grid-area: indexFondo;
-    animation-name: titulo;
-    animation-duration: 2s;
-    animation-iteration-count: 1;
-}
-
-@keyframes titulo {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 90%;
-    }
-}
-
-.indexFondo h2 {
-    font-family: 'Whisper', cursive;
-    text-align: center;
-    font-size: 2.5rem;  
-    padding-top: 30px;
-    letter-spacing: 2px;
-    opacity: 90%;
-}
-
-#seccionActividades {
-    background-color: #fdf9c4;
-    grid-area: actividades;
-}
-
-#seccionActividades h2 {
-    font-family: 'Whisper', cursive;
-    text-align: center;
-    font-size: 2.5rem;
-    padding: 10px;
-}
-
-#seccionActividades h3 {
-    font-size: 1.75rem;  
-}
-
-.actividades {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-.actividadTalleres {
-    background-color: white;
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.25rem;
-    text-align: center;
-    border: 1px solid black;
-    margin: 20px;
-    padding: 10px 50px 6px 50px;
-    border-radius: 15px;
-    line-height: 1.6;
-    box-shadow: 5px 5px 10px;
-}
-
-.actividadTalleres ul {
-    padding: 0px 5px 0px 5px;
-   list-style-type: none;
-}
-
-.actividad {
-    background-color: white;
-    font-family: 'Roboto', sans-serif;
-    font-size: 1rem;
-    text-align: center;
-    border: 1px solid black;
-    border-radius: 15px;
-    margin: 20px;
-    padding: 10px;
-    box-shadow: 5px 5px 10px;
-}
-
-.yoga img {
-    opacity: 85%;
-    max-width: 90%;
-}
-
-.stretching img {
-    opacity: 85%;
-    max-width: 90%;
-}
-
-#seccionExperiencia {
-    background-color: #ffda9e;
-    font-family: 'Roboto', sans-serif;
-    font-size: 1rem;
-    line-height: 1.6;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    grid-area: experiencia;
-}
-
-#seccionExperiencia h2{
-    font-family: 'Whisper', cursive;
-    text-align: center;
-    font-size: 2.5rem;
-    padding: 10px;
-}
-
-#seccionExperiencia div {
-    width: 700px;
-    margin: 0px 20px 10px 20px;
-    order: 2;
-    max-width: 90%;
-}
-
-#seccionExperiencia p {
-    padding-bottom: 40px;
-}
-
-#seccionExperiencia figure {
-    margin: 20px 10px 10px 35px;
-    order: 1;
-}
-
-#seccionExperiencia img {
-    border-radius: 30px;
-    max-width: 90%;
-}
-
-.sobreNosotros a {
-    font-style: italic;
-    text-transform: initial;
-    border: 1px black solid;
-    border-radius: 4px;
-    background-image: linear-gradient(to right, #fabfb7, #fdf9c4);
-    padding: 3px;
-}
-
-.sobreNosotros a:hover {
-    padding: 5px
-}
+@import "variables", "fuentes", "general", "header", "footer", "index";
 
 /* BIOGRAFIA */
 
@@ -227,10 +49,10 @@ a {
     background-color: #ffda9e;
     display: grid;
     grid-template-areas:
-    "tituloYoga descripcionYoga"
-    "tituloStretching descripcionStretching"
-    "tituloNutricion descripcionNutricion"
-    "tituloCongreso descripcionCongreso";
+        "tituloYoga descripcionYoga"
+        "tituloStretching descripcionStretching"
+        "tituloNutricion descripcionNutricion"
+        "tituloCongreso descripcionCongreso";
 }
 
 .yogaBio {
@@ -323,7 +145,7 @@ a {
 }
 
 .imagenClases {
-    padding: 30px 20px 20px 20px;
+    padding: 20px 10px 10px 20px;
     background-color: #fdf9c4;
     display: flex;
     justify-content: center;
@@ -333,38 +155,33 @@ a {
     width: 500px;
 }
 
-.beneficios h3 {
+.beneficiosYoga h3 {
     font-family: 'Whisper', cursive;
     font-size: 2rem;
-    text-align: center;
     padding-bottom: 10px;
 }
 
 .beneficios {
     display: flex;
     flex-direction: row-reverse;
-    justify-content: space-evenly;
     background-color: #ffda9e;
     font-family: 'Roboto', sans-serif;
     line-height: 2.5;
 }
 
-.beneficios div {
-    margin-right: 100px;
-    padding-top: 50px;
+.beneficiosYoga {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
 .imagenBeneficios {
-    background-color: #ffda9e;
-    display: flex;
-    justify-content: center;
+    width: 750px;
 }
-
-.imagenBeneficios img {
-    width: 670px;
-    padding: 60px 0px 50px 0px;
-}
-
 
 /* HORARIOS */
 
@@ -421,10 +238,10 @@ a {
 #mainContacto {
     background-color: #ffda9e;
     display: grid;
-    grid-template-areas: 
-    "titulo titulo"
-    "mapa frente"
-    "formulario formulario"
+    grid-template-areas:
+        "titulo titulo"
+        "mapa frente"
+        "formulario formulario"
     ;
 }
 
@@ -463,7 +280,7 @@ a {
     font-family: 'Roboto', sans-serif;
 }
 
-.frente img{
+.frente img {
     width: 550px;
 }
 
@@ -487,24 +304,17 @@ a {
         bottom: 15px;
         right: 15px;
         opacity: 80%;
-    }
-} 
 
-.botonWhatsApp img:hover {
-    opacity: 100%;
+        &:hover {
+            opacity: 100%;
+        }
+    }
 }
+
 
 @media (max-width:1023px) {
 
     /* index */
-
-    #index {
-        display: grid;
-        grid-template-areas:
-        "indexFondo"
-        "actividades"
-        "experiencia";
-    }
 
     .indexFondo {
         height: 500px;
@@ -516,7 +326,7 @@ a {
 
     #seccionExperiencia div {
         width: 100%;
-    } 
+    }
 
     /* biografia */
 
@@ -524,14 +334,14 @@ a {
         background-color: #ffda9e;
         display: grid;
         grid-template-areas:
-        "descripcionYoga"
-        "tituloYoga" 
-        "descripcionStretching"
-        "tituloStretching" 
-        "descripcionNutricion"
-        "tituloNutricion"
-        "descripcionCongreso"
-        "tituloCongreso" ;
+            "descripcionYoga"
+            "tituloYoga"
+            "descripcionStretching"
+            "tituloStretching"
+            "descripcionNutricion"
+            "tituloNutricion"
+            "descripcionCongreso"
+            "tituloCongreso";
     }
 
     #titulos img {
@@ -547,37 +357,32 @@ a {
         margin-bottom: 20px;
     }
 
-    #seccionUno h2, #seccionDos h2, #mainContacto h2 {
+    #seccionUno h2,
+    #seccionDos h2,
+    #mainContacto h2 {
         font-size: 1.8rem;
         height: 70px;
         padding-top: 20px;
-    } 
-   
+    }
+
     /* clases */
 
     .beneficios {
         padding-top: 0px;
-        padding-left: 40px;
+        padding-left: 10px;
         flex-flow: row wrap;
         align-items: center;
-    }   
+    }
 
-    .beneficios div {
+    .beneficiosYoga {
+        margin-left: 10px;
         padding-top: 10px;
     }
 
     .clases {
-        padding: 0px 35px 10px 35px;
+        padding: 0px 20px 10px 10px;
         flex-flow: row wrap;
         align-items: center;
-    } 
-
-    .imagenBeneficios img {
-        padding: 10px 40px 10px 0px;
-    }
-
-    .imagenClases {
-        padding-top: 40px;
     }
 
     /* HORARIOS */
@@ -587,7 +392,7 @@ a {
         justify-content: flex-start;
     }
 
-    .aclaraciones h3{
+    .aclaraciones h3 {
         padding-left: 30px;
     }
 
@@ -602,10 +407,10 @@ a {
 
     #mainContacto {
         display: grid;
-        grid-template-areas: 
-        "titulo"
-        "mapa"
-        "formulario"
+        grid-template-areas:
+            "titulo"
+            "mapa"
+            "formulario"
         ;
     }
 
@@ -624,17 +429,19 @@ a {
 }
 
 @media (max-width:600px) {
+
+    .logo {
+        height: 30px;
+    }
+    
     header {
         .tituloLogo {
-            .logo {
-                height: 30px;
-            }
             h1 {
                 font-size: 1.3rem;
             }
         }
     }
-    
+
     .barraNavegacion a {
         font-size: 0.6rem;
     }
@@ -642,12 +449,6 @@ a {
     .indexFondo h2 {
         padding-top: 10px;
         font-size: 1.5rem;
-    }
-
-    footer {
-        .logo {
-            height: 30px;
-        }
     }
 
     footer h4 {
@@ -661,7 +462,10 @@ a {
 
     /* biografia */
 
-    #titulos .tituloYoga, .tituloStretching, .tituloNutricion, .tituloCongreso {
+    #titulos .tituloYoga,
+    .tituloStretching,
+    .tituloNutricion,
+    .tituloCongreso {
         padding-right: 40px;
     }
 
@@ -678,5 +482,3 @@ a {
     }
 
 }
-
-
