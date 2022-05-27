@@ -4,11 +4,7 @@
     background-color: $color-fondo-2;
 
     h2 {
-        height: 100px;
-        font-family: 'Whisper', cursive;
-        font-size: 2.5rem;
-        text-align: center;
-        padding-top: 30px;
+        @include titulo;
     }
 
     .biografia {
@@ -56,9 +52,8 @@
         padding: 0px 30px 0px 30px;
 
         h3 {
-            font-family: 'Roboto', sans-serif;
-            font-size: 1.5rem;
-            padding: 10px 0px 10px 25px
+            @extend p;
+            font-size: 1.5rem;  
         }
         
         p {

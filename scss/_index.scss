@@ -19,12 +19,14 @@
         }
     }
 
+    $estilo:(tamFuente:2.5rem, espacioLetra:2px);
+
     h2 {
         font-family: 'Whisper', cursive;
         text-align: center;
-        font-size: 2.5rem;
+        font-size: map-get($estilo,tamFuente);
         padding-top: 30px;
-        letter-spacing: 2px;
+        letter-spacing: map-get($estilo,espacioLetra);
         opacity: 90%;
     }
 }

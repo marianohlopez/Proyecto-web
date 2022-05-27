@@ -182,7 +182,7 @@ footer {
       text-align: center;
       font-size: 2.5rem;
       padding: 10px; }
-    #seccionExperiencia div p {
+    #seccionExperiencia div p, #seccionExperiencia div #titulos .descripcion h3, #titulos .descripcion #seccionExperiencia div h3 {
       padding-bottom: 40px; }
     #seccionExperiencia div .sobreNosotros a {
       font-style: italic;
@@ -238,10 +238,8 @@ footer {
     margin-top: 180px;
     padding: 0px 30px 0px 30px; }
     #titulos .descripcion h3 {
-      font-family: 'Roboto', sans-serif;
-      font-size: 1.5rem;
-      padding: 10px 0px 10px 25px; }
-    #titulos .descripcion p {
+      font-size: 1.5rem; }
+    #titulos .descripcion p, #titulos .descripcion h3 {
       font-family: 'Roboto', sans-serif;
       padding: 0px 0px 10px 25px; }
   #titulos .yogaBio {
@@ -378,7 +376,7 @@ footer {
     grid-area: frente;
     background-color: #fdf9c4;
     padding-left: 50px; }
-    #mainContacto .frente p {
+    #mainContacto .frente p, #mainContacto .frente #titulos .descripcion h3, #titulos .descripcion #mainContacto .frente h3 {
       padding: 50px 30px 30px 0px;
       font-family: 'Roboto', sans-serif; }
     #mainContacto .frente img {
