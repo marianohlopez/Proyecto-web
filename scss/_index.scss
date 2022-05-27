@@ -30,8 +30,7 @@
 }
 
 #seccionActividades {
-    background-color: #fdf9c4;
-    grid-area: actividades;
+    background-color: $color-fondo-1;
 
     h2 {
         font-family: 'Whisper', cursive;
@@ -98,7 +97,7 @@
 }
 
 #seccionExperiencia {
-    background-color: #ffda9e;
+    background-color: $color-fondo-2;
     font-family: 'Roboto', sans-serif;
     font-size: 1rem;
     line-height: 1.6;

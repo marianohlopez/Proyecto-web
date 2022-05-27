@@ -1,0 +1,60 @@
+/* HORARIOS */
+
+#mainHorarios {
+    background-color: $color-fondo-2;
+
+    .tituloHorarios {
+        height: 100px;
+        font-family: 'Whisper', cursive;
+        font-size: 2.5rem;
+        padding: 30px 0px 0px 50px;
+    }
+
+    .horarios {
+        font-family: 'Roboto', sans-serif;
+        background-color: $color-fondo-1;
+        border-bottom: $color-fondo-2 5px solid;
+        padding: 40px 0px 20px 60px;
+        text-align: center;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: row;
+
+        table {
+            padding: 10px 50px 10px 50px;
+            width: 900px;
+        }
+
+        div {
+            width: 300px;
+        }
+    }
+
+    .aclaraciones {
+        background-color: $color-fondo-1;
+        font-family: 'Roboto', sans-serif;
+        line-height: 2.0;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 30px 0px 0px 40px;
+        border-bottom: $color-fondo-2 5px solid;
+
+        h3 {
+            font-family: 'Whisper', cursive;
+            font-size: 2rem;
+            padding-left: 40px;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+

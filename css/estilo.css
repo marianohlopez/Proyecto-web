@@ -18,6 +18,15 @@ a {
   order: 1;
   padding: 3px; }
 
+.botonWhatsApp img {
+  width: 60px;
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  opacity: 80%; }
+  .botonWhatsApp img:hover {
+    opacity: 100%; }
+
 /* HEADER */
 header {
   background-color: #fdf9c4;
@@ -109,8 +118,7 @@ footer {
     opacity: 90%; }
 
 #seccionActividades {
-  background-color: #fdf9c4;
-  grid-area: actividades; }
+  background-color: #fdf9c4; }
   #seccionActividades h2 {
     font-family: 'Whisper', cursive;
     text-align: center;
@@ -195,246 +203,195 @@ footer {
 /* BIOGRAFIA */
 #seccionUno {
   background-color: #ffda9e; }
-
-#seccionUno h2 {
-  height: 100px;
-  font-family: 'Whisper', cursive;
-  font-size: 2.5rem;
-  text-align: center;
-  padding-top: 30px; }
-
-.biografia h3 {
-  font-family: 'Whisper', cursive;
-  font-size: 2rem;
-  text-align: center;
-  padding-bottom: 10px; }
-
-.biografia div {
-  width: 800px;
-  order: 2;
-  margin: 10px 30px 20px 30px; }
-
-.biografia img {
-  width: 400px; }
-
-.biografia {
-  background-color: #fdf9c4;
-  font-family: 'Roboto', sans-serif;
-  line-height: 1.6;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-evenly;
-  align-items: center;
-  padding: 50px 15px 35px 20px; }
+  #seccionUno h2 {
+    height: 100px;
+    font-family: 'Whisper', cursive;
+    font-size: 2.5rem;
+    text-align: center;
+    padding-top: 30px; }
+  #seccionUno .biografia {
+    background-color: #fdf9c4;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 50px 15px 35px 20px; }
+    #seccionUno .biografia div {
+      width: 800px;
+      order: 2;
+      margin: 10px 30px 20px 30px; }
+      #seccionUno .biografia div h3 {
+        font-family: 'Whisper', cursive;
+        font-size: 2rem;
+        text-align: center;
+        padding-bottom: 10px; }
+    #seccionUno .biografia figure img {
+      width: 400px; }
 
 #titulos {
   background-color: #ffda9e;
   display: grid;
   grid-template-areas: "tituloYoga descripcionYoga" "tituloStretching descripcionStretching" "tituloNutricion descripcionNutricion" "tituloCongreso descripcionCongreso"; }
-
-.yogaBio {
-  grid-area: descripcionYoga; }
-
-.tituloYoga {
-  grid-area: tituloYoga; }
-
-.stretching {
-  grid-area: descripcionStretching; }
-
-.tituloStretching {
-  grid-area: tituloStretching; }
-
-.nutricion {
-  grid-area: descripcionNutricion; }
-
-.tituloNutricion {
-  grid-area: tituloNutricion; }
-
-.congreso {
-  grid-area: descripcionCongreso; }
-
-.tituloCongreso {
-  grid-area: tituloCongreso; }
-
-.descripcion {
-  margin-top: 180px; }
-
-#titulos h3 {
-  font-family: 'Roboto', sans-serif;
-  font-size: 1.5rem;
-  padding: 10px 0px 10px 25px; }
-
-#titulos p {
-  font-family: 'Roboto', sans-serif;
-  padding: 0px 0px 10px 25px; }
-
-#titulos img {
-  margin: 20px 45px 10px 25px;
-  width: 650px; }
+  #titulos .descripcion {
+    margin-top: 180px;
+    padding: 0px 30px 0px 30px; }
+    #titulos .descripcion h3 {
+      font-family: 'Roboto', sans-serif;
+      font-size: 1.5rem;
+      padding: 10px 0px 10px 25px; }
+    #titulos .descripcion p {
+      font-family: 'Roboto', sans-serif;
+      padding: 0px 0px 10px 25px; }
+  #titulos .yogaBio {
+    grid-area: descripcionYoga; }
+  #titulos .tituloYoga {
+    grid-area: tituloYoga; }
+  #titulos .stretching {
+    grid-area: descripcionStretching; }
+  #titulos .tituloStretching {
+    grid-area: tituloStretching; }
+  #titulos .nutricion {
+    grid-area: descripcionNutricion; }
+  #titulos .tituloNutricion {
+    grid-area: tituloNutricion; }
+  #titulos .congreso {
+    grid-area: descripcionCongreso; }
+  #titulos .tituloCongreso {
+    grid-area: tituloCongreso; }
+  #titulos img {
+    margin: 20px 25px 10px 45px;
+    width: 650px; }
 
 /* CLASES */
 #seccionDos {
   background-color: #ffda9e; }
-
-.clases {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
-  padding: 50px 40px 50px 40px;
-  background-color: #fdf9c4;
-  font-family: 'Roboto', sans-serif;
-  line-height: 1.6; }
-
-.clases div {
-  width: 750px;
-  padding: 0px 20px 0px 20px; }
-
-.tituloCentral {
-  height: 100px;
-  font-family: 'Whisper', cursive;
-  font-size: 2.5rem;
-  text-align: center;
-  padding-top: 30px; }
-
-.clases h3 {
-  font-family: 'Whisper', cursive;
-  font-size: 2rem;
-  text-align: center;
-  padding-bottom: 10px; }
-
-.imagenClases {
-  padding: 20px 10px 10px 20px;
-  background-color: #fdf9c4;
-  display: flex;
-  justify-content: center; }
-
-.imagenClases img {
-  width: 500px; }
-
-.beneficiosYoga h3 {
-  font-family: 'Whisper', cursive;
-  font-size: 2rem;
-  padding-bottom: 10px; }
-
-.beneficios {
-  display: flex;
-  flex-direction: row-reverse;
-  background-color: #ffda9e;
-  font-family: 'Roboto', sans-serif;
-  line-height: 2.5; }
-
-.beneficiosYoga {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  padding-top: 20px;
-  margin-left: 50px;
-  margin-right: 50px; }
-
-.imagenBeneficios {
-  width: 750px; }
+  #seccionDos .tituloCentral {
+    height: 100px;
+    font-family: 'Whisper', cursive;
+    font-size: 2.5rem;
+    text-align: center;
+    padding-top: 30px; }
+  #seccionDos .clases {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 50px 40px 50px 40px;
+    background-color: #fdf9c4;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6; }
+    #seccionDos .clases .imagenClases {
+      padding: 20px 10px 10px 20px;
+      background-color: #fdf9c4;
+      display: flex;
+      justify-content: center; }
+      #seccionDos .clases .imagenClases img {
+        width: 500px; }
+    #seccionDos .clases div {
+      width: 750px;
+      padding: 0px 20px 0px 20px; }
+      #seccionDos .clases div h3 {
+        font-family: 'Whisper', cursive;
+        font-size: 2rem;
+        text-align: center;
+        padding-bottom: 10px; }
+  #seccionDos .beneficios {
+    display: flex;
+    flex-direction: row-reverse;
+    background-color: #ffda9e;
+    font-family: 'Roboto', sans-serif;
+    line-height: 2.5; }
+    #seccionDos .beneficios .imagenBeneficios {
+      width: 750px; }
+    #seccionDos .beneficios .beneficiosYoga {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      padding-top: 20px;
+      margin-left: 50px;
+      margin-right: 50px; }
+      #seccionDos .beneficios .beneficiosYoga h3 {
+        font-family: 'Whisper', cursive;
+        font-size: 2rem;
+        padding-bottom: 10px; }
 
 /* HORARIOS */
 #mainHorarios {
   background-color: #ffda9e; }
-
-.tituloHorarios {
-  height: 100px;
-  font-family: 'Whisper', cursive;
-  font-size: 2.5rem;
-  padding: 30px 0px 0px 50px; }
-
-.horarios table {
-  padding: 10px 50px 10px 50px;
-  width: 900px; }
-
-.horarios {
-  font-family: 'Roboto', sans-serif;
-  background-color: #fdf9c4;
-  border-bottom: #ffda9e 5px solid;
-  padding: 40px 0px 20px 60px;
-  text-align: center;
-  display: flex;
-  justify-content: space-evenly;
-  flex-direction: row; }
-
-.horarios div {
-  width: 300px; }
-
-.aclaraciones h3 {
-  font-family: 'Whisper', cursive;
-  font-size: 2rem;
-  padding-left: 40px; }
-
-.aclaraciones {
-  background-color: #fdf9c4;
-  font-family: 'Roboto', sans-serif;
-  line-height: 2.0;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  padding: 30px 0px 0px 40px;
-  border-bottom: #ffda9e 5px solid; }
+  #mainHorarios .tituloHorarios {
+    height: 100px;
+    font-family: 'Whisper', cursive;
+    font-size: 2.5rem;
+    padding: 30px 0px 0px 50px; }
+  #mainHorarios .horarios {
+    font-family: 'Roboto', sans-serif;
+    background-color: #fdf9c4;
+    border-bottom: #ffda9e 5px solid;
+    padding: 40px 0px 20px 60px;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row; }
+    #mainHorarios .horarios table {
+      padding: 10px 50px 10px 50px;
+      width: 900px; }
+    #mainHorarios .horarios div {
+      width: 300px; }
+  #mainHorarios .aclaraciones {
+    background-color: #fdf9c4;
+    font-family: 'Roboto', sans-serif;
+    line-height: 2.0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 30px 0px 0px 40px;
+    border-bottom: #ffda9e 5px solid; }
+    #mainHorarios .aclaraciones h3 {
+      font-family: 'Whisper', cursive;
+      font-size: 2rem;
+      padding-left: 40px; }
 
 /* CONTACTO */
 #mainContacto {
   background-color: #ffda9e;
   display: grid;
   grid-template-areas: "titulo titulo" "mapa frente" "formulario formulario"; }
-
-#mainContacto h2 {
-  height: 100px;
-  font-family: 'Whisper', cursive;
-  font-size: 2.5rem;
-  padding: 30px 0px 0px 50px;
-  grid-area: titulo; }
-
-.contacto {
-  background-color: #fdf9c4;
-  display: flex;
-  justify-content: center;
-  grid-area: mapa; }
-
-.contacto iframe {
-  width: 600px;
-  height: 450px; }
-
-.contacto {
-  padding: 30px 0px 40px 40px; }
-
-.frente {
-  grid-area: frente;
-  background-color: #fdf9c4;
-  padding-left: 50px; }
-
-.frente p {
-  padding: 50px 30px 30px 0px;
-  font-family: 'Roboto', sans-serif; }
-
-.frente img {
-  width: 550px; }
-
-#formulario {
-  background-color: #ffda9e;
-  font-family: 'Roboto', sans-serif;
-  padding: 20px 0px 30px 40px;
-  grid-area: formulario; }
-
-#formulario h3 {
-  font-family: 'Whisper', cursive;
-  font-size: 2rem;
-  padding-bottom: 15px; }
-
-.botonWhatsApp img {
-  width: 60px;
-  position: fixed;
-  bottom: 15px;
-  right: 15px;
-  opacity: 80%; }
-  .botonWhatsApp img:hover {
-    opacity: 100%; }
+  #mainContacto h2 {
+    height: 100px;
+    font-family: 'Whisper', cursive;
+    font-size: 2.5rem;
+    padding: 30px 0px 0px 50px;
+    grid-area: titulo; }
+  #mainContacto .contacto {
+    background-color: #fdf9c4;
+    display: flex;
+    justify-content: center;
+    grid-area: mapa;
+    padding: 30px 0px 40px 40px; }
+    #mainContacto .contacto iframe {
+      width: 600px;
+      height: 450px; }
+  #mainContacto .frente {
+    grid-area: frente;
+    background-color: #fdf9c4;
+    padding-left: 50px; }
+    #mainContacto .frente p {
+      padding: 50px 30px 30px 0px;
+      font-family: 'Roboto', sans-serif; }
+    #mainContacto .frente img {
+      width: 550px; }
+  #mainContacto #formulario {
+    background-color: #ffda9e;
+    font-family: 'Roboto', sans-serif;
+    padding: 20px 0px 30px 40px;
+    grid-area: formulario; }
+    #mainContacto #formulario h3 {
+      font-family: 'Whisper', cursive;
+      font-size: 2rem;
+      padding-bottom: 15px; }
 
 @media (max-width: 1023px) {
   /* index */
@@ -442,60 +399,63 @@ footer {
     height: 500px; }
   #seccionExperiencia {
     flex-flow: row wrap; }
-  #seccionExperiencia div {
-    width: 100%; }
+    #seccionExperiencia div {
+      width: 100%; }
   /* biografia */
   #titulos {
     background-color: #ffda9e;
     display: grid;
     grid-template-areas: "descripcionYoga" "tituloYoga" "descripcionStretching" "tituloStretching" "descripcionNutricion" "tituloNutricion" "descripcionCongreso" "tituloCongreso"; }
-  #titulos img {
-    max-width: 90%; }
-  .descripcion {
-    margin-top: 10px;
-    max-width: 90%; }
-  .biografia figure {
+    #titulos .descripcion {
+      margin-top: 10px;
+      max-width: 90%; }
+    #titulos img {
+      max-width: 90%; }
+  #seccionUno .biografia figure {
     margin-bottom: 20px; }
   #seccionUno h2,
-  #seccionDos h2,
   #mainContacto h2 {
     font-size: 1.8rem;
     height: 70px;
     padding-top: 20px; }
   /* clases */
-  .beneficios {
+  #seccionDos .tituloCentral {
+    font-size: 1.8rem;
+    height: 70px;
+    padding-top: 20px; }
+  #seccionDos .clases {
+    padding: 0px 20px 10px 10px;
+    flex-flow: row wrap;
+    align-items: center; }
+  #seccionDos .beneficios {
     padding-top: 0px;
     padding-left: 10px;
     flex-flow: row wrap;
     align-items: center; }
-  .beneficiosYoga {
-    margin-left: 10px;
-    padding-top: 10px; }
-  .clases {
-    padding: 0px 20px 10px 10px;
-    flex-flow: row wrap;
-    align-items: center; }
+    #seccionDos .beneficios .beneficiosYoga {
+      margin-left: 10px;
+      padding-top: 10px; }
   /* HORARIOS */
-  .horarios {
+  #mainHorarios .horarios {
     flex-wrap: wrap;
     justify-content: flex-start; }
-  .aclaraciones h3 {
-    padding-left: 30px; }
-  .aclaraciones {
+  #mainHorarios .aclaraciones {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     padding: 30px 40px 30px 70px; }
+    #mainHorarios .aclaraciones h3 {
+      padding-left: 30px; }
   /* contacto */
   #mainContacto {
     display: grid;
     grid-template-areas: "titulo" "mapa" "formulario"; }
-  .frente {
-    display: none; }
-  .contacto {
-    padding-left: 0px; }
-  .contacto iframe {
-    max-inline-size: 90%; } }
+    #mainContacto .contacto {
+      padding-left: 0px; }
+      #mainContacto .contacto iframe {
+        max-inline-size: 90%; }
+    #mainContacto .frente {
+      display: none; } }
 
 @media (max-width: 600px) {
   .logo {
@@ -519,9 +479,9 @@ footer {
   .tituloCongreso {
     padding-right: 40px; }
   /* horarios */
-  .tituloHorarios {
+  #mainHorarios .tituloHorarios {
     font-size: 1.8rem;
     height: 70px;
     padding-top: 5px; }
-  .aclaraciones {
+  #mainHorarios .aclaraciones {
     padding: 30px 40px 30px 30px; } }

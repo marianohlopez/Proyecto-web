@@ -1,0 +1,93 @@
+/* CLASES */
+
+#seccionDos {
+    background-color: $color-fondo-2;
+
+    .tituloCentral {
+        height: 100px;
+        font-family: 'Whisper', cursive;
+        font-size: 2.5rem;
+        text-align: center;
+        padding-top: 30px;
+    }
+
+    .clases {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 50px 40px 50px 40px;
+        background-color: $color-fondo-1;
+        font-family: 'Roboto', sans-serif;
+        line-height: 1.6;
+
+        .imagenClases {
+            padding: 20px 10px 10px 20px;
+            background-color: $color-fondo-1;
+            display: flex;
+            justify-content: center;
+
+            img {
+                width: 500px;
+            }
+        }
+
+        div {
+            width: 750px;
+            padding: 0px 20px 0px 20px;
+
+
+            h3 {
+                font-family: 'Whisper', cursive;
+                font-size: 2rem;
+                text-align: center;
+                padding-bottom: 10px;
+            }
+
+        }
+    }
+
+    .beneficios {
+        display: flex;
+        flex-direction: row-reverse;
+        background-color: $color-fondo-2;
+        font-family: 'Roboto', sans-serif;
+        line-height: 2.5;
+
+        .imagenBeneficios {
+            width: 750px;
+        }
+
+        .beneficiosYoga {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding-top: 20px;
+            margin-left: 50px;
+            margin-right: 50px;
+
+            h3 {
+                font-family: 'Whisper', cursive;
+                font-size: 2rem;
+                padding-bottom: 10px;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

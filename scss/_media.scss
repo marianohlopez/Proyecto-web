@@ -1,0 +1,186 @@
+@media (max-width:1023px) {
+
+    /* index */
+
+    .indexFondo {
+        height: 500px;
+    }
+
+    #seccionExperiencia {
+        flex-flow: row wrap;
+
+        div {
+            width: 100%;
+        }
+    }
+
+    /* biografia */
+
+    #titulos {
+        background-color: #ffda9e;
+        display: grid;
+        grid-template-areas:
+            "descripcionYoga"
+            "tituloYoga"
+            "descripcionStretching"
+            "tituloStretching"
+            "descripcionNutricion"
+            "tituloNutricion"
+            "descripcionCongreso"
+            "tituloCongreso";
+
+        .descripcion {
+            margin-top: 10px;
+            max-width: 90%;
+        }
+
+        img {
+            max-width: 90%;
+        }
+    }
+
+    #seccionUno {
+        .biografia {
+            figure {
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+    #seccionUno,
+    #mainContacto {
+        h2 {
+            font-size: 1.8rem;
+            height: 70px;
+            padding-top: 20px;
+        }
+    }
+
+    /* clases */
+
+    #seccionDos {
+        .tituloCentral {
+            font-size: 1.8rem;
+            height: 70px;
+            padding-top: 20px;
+        }
+
+        .clases {
+            padding: 0px 20px 10px 10px;
+            flex-flow: row wrap;
+            align-items: center;
+        }
+
+        .beneficios {
+            padding-top: 0px;
+            padding-left: 10px;
+            flex-flow: row wrap;
+            align-items: center;
+
+            .beneficiosYoga {
+                margin-left: 10px;
+                padding-top: 10px;
+            }
+        }
+
+    }
+
+    /* HORARIOS */
+
+    #mainHorarios {
+        .horarios {
+            flex-wrap: wrap;
+            justify-content: flex-start;
+        }
+
+        .aclaraciones {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 30px 40px 30px 70px;
+
+            h3 {
+                padding-left: 30px;
+            }
+        }
+    }
+
+    /* contacto */
+
+    #mainContacto {
+        display: grid;
+        grid-template-areas:
+            "titulo"
+            "mapa"
+            "formulario"
+        ;
+
+        .contacto {
+            padding-left: 0px;
+
+            iframe {
+                max-inline-size: 90%;
+            }
+        }
+
+        .frente {
+            display: none;
+        }
+    }
+}
+
+@media (max-width:600px) {
+
+    .logo {
+        height: 30px;
+    }
+
+    header {
+        .tituloLogo {
+            h1 {
+                font-size: 1.3rem;
+            }
+        }
+    }
+
+    .barraNavegacion a {
+        font-size: 0.6rem;
+    }
+
+    .indexFondo h2 {
+        padding-top: 10px;
+        font-size: 1.5rem;
+    }
+
+    footer h4 {
+        padding: 10px 0px 10px 10px;
+        font-size: 1.3rem;
+    }
+
+    .direccion {
+        padding: 10px 0px 10px 0px;
+    }
+
+    /* biografia */
+
+    #titulos .tituloYoga,
+    .tituloStretching,
+    .tituloNutricion,
+    .tituloCongreso {
+        padding-right: 40px;
+    }
+
+    /* horarios */
+
+    #mainHorarios {
+        .tituloHorarios {
+            font-size: 1.8rem;
+            height: 70px;
+            padding-top: 5px;
+        }
+
+        .aclaraciones {
+            padding: 30px 40px 30px 30px;
+        }
+    }
+}
