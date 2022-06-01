@@ -10,7 +10,6 @@ a {
     text-transform: uppercase;
 
     &:hover {
-        opacity: 80%;
         color: black;
     }
 }
@@ -27,10 +26,14 @@ a {
         position: fixed;
         bottom: 15px;
         right: 15px;
+        background-color: #2BB741;
+        padding: 12px;
         opacity: 80%;
+        transition: 0.4s;
 
         &:hover {
             opacity: 100%;
+            background-color: #24e755;
         }
     }
 }

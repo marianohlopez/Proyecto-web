@@ -36,7 +36,7 @@
         padding-left: 50px;
     
         p {
-            padding: 50px 30px 30px 0px;
+            padding: 50px 30px 20px 0px;
             font-family: 'Roboto', sans-serif;
         }
         
@@ -54,8 +54,19 @@
         h3 {
             font-family: 'Whisper', cursive;
             font-size: 2rem;
-            padding-bottom: 15px;
+            padding: 0px 0px 15px 15px;
         }    
+
+        form {
+            .botonForm {
+                text-transform: initial;
+                border: 1px black solid;
+                border-radius: 4px;
+                padding: 3px;
+                font-size: 1rem;
+                letter-spacing: 1px;
+            }
+        }
     }
 }
 

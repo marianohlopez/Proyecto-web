@@ -24,9 +24,9 @@
     h2 {
         font-family: 'Whisper', cursive;
         text-align: center;
-        font-size: map-get($estilo,tamFuente);
+        font-size: map-get($estilo, tamFuente);
         padding-top: 30px;
-        letter-spacing: map-get($estilo,espacioLetra);
+        letter-spacing: map-get($estilo, espacioLetra);
         opacity: 90%;
     }
 }
@@ -122,7 +122,7 @@
         }
 
         p {
-            padding-bottom: 40px;
+            padding-bottom: 15px;
         }
 
         .sobreNosotros {
@@ -133,6 +133,9 @@
                 border-radius: 4px;
                 background-image: linear-gradient(to right, #fabfb7, #fdf9c4);
                 padding: 3px;
+                font-size: 1rem;
+                letter-spacing: 1px;
+                transition: 0.2s;
 
                 &:hover {
                     padding: 5px

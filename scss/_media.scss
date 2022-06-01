@@ -16,8 +16,12 @@
 
     /* biografia */
 
+    .biografia {
+        flex-wrap: wrap;
+    }
+
     #titulos {
-        background-color: #ffda9e;
+        background-color: $color-fondo-2;
         display: grid;
         grid-template-areas:
             "descripcionYoga"
@@ -30,8 +34,12 @@
             "tituloCongreso";
 
         .descripcion {
-            margin-top: 10px;
-            max-width: 90%;
+            margin-top: 30px;
+            width: 90%; 
+        }
+
+        .tituloYoga,.tituloStretching,.tituloNutricion,.tituloCongreso {
+            margin-top: 0px;
         }
 
         img {
@@ -126,6 +134,10 @@
         .frente {
             display: none;
         }
+
+        #formulario {
+            padding-left: 10px;
+        }
     }
 }
 
@@ -144,7 +156,7 @@
     }
 
     .barraNavegacion a {
-        font-size: 0.6rem;
+        font-size: 0.9rem;
     }
 
     .indexFondo h2 {
@@ -153,30 +165,30 @@
     }
 
     footer h4 {
-        padding: 10px 0px 10px 10px;
+        padding: 15px 0px 10px 5px;
         font-size: 1.3rem;
     }
 
     .direccion {
         padding: 10px 0px 10px 0px;
+        font-size: 90%;
     }
 
-    /* biografia */
-
-    #titulos .tituloYoga,
-    .tituloStretching,
-    .tituloNutricion,
-    .tituloCongreso {
-        padding-right: 40px;
+    /* Biografia */
+    #titulos {
+        .descripcion {
+            font-size: 90%;
+            margin-left: 20px;
+        }
     }
 
     /* horarios */
 
     #mainHorarios {
         .tituloHorarios {
-            font-size: 1.8rem;
+            font-size: 1.6rem;
             height: 70px;
-            padding-top: 5px;
+            padding-top: 20px;
         }
 
         .aclaraciones {

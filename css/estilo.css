@@ -10,7 +10,6 @@ a {
   color: black;
   text-transform: uppercase; }
   a:hover {
-    opacity: 80%;
     color: black; }
 
 .logo {
@@ -23,9 +22,13 @@ a {
   position: fixed;
   bottom: 15px;
   right: 15px;
-  opacity: 80%; }
+  background-color: #2BB741;
+  padding: 12px;
+  opacity: 80%;
+  transition: 0.4s; }
   .botonWhatsApp img:hover {
-    opacity: 100%; }
+    opacity: 100%;
+    background-color: #24e755; }
 
 /* HEADER */
 header {
@@ -48,21 +51,19 @@ header {
       font-family: 'Whisper', cursive;
       font-weight: bolder;
       font-size: 2.2rem; }
-  header .barraNavegacion {
-    order: 3; }
-    header .barraNavegacion a {
-      background-color: #fdf9c4;
-      background-image: linear-gradient(currentColor, currentColor);
-      background-position: 0% 100%;
-      background-repeat: no-repeat;
-      background-size: 0% 2px;
-      transition: background-size .3s;
-      color: black;
-      text-align: center; }
-      header .barraNavegacion a:hover {
-        background-size: 100% 2px;
-        opacity: 80%;
-        color: black; }
+  header .barraNavegacion a {
+    background-color: #fdf9c4;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .3s;
+    color: black;
+    text-align: center; }
+    header .barraNavegacion a:hover {
+      background-size: 100% 2px;
+      opacity: 80%;
+      color: black; }
 
 /* FOOTER */
 footer {
@@ -91,8 +92,8 @@ footer {
     footer .botones .botonInstagram {
       display: inline-block; }
       footer .botones .botonInstagram img {
-        width: 70px;
-        padding-bottom: 2px; }
+        width: 80px;
+        padding-bottom: 5.5px; }
 
 /* INICIO/INDEX */
 .indexFondo {
@@ -182,15 +183,18 @@ footer {
       text-align: center;
       font-size: 2.5rem;
       padding: 10px; }
-    #seccionExperiencia div p, #seccionExperiencia div #titulos .descripcion h3, #titulos .descripcion #seccionExperiencia div h3 {
-      padding-bottom: 40px; }
+    #seccionExperiencia div p {
+      padding-bottom: 15px; }
     #seccionExperiencia div .sobreNosotros a {
       font-style: italic;
       text-transform: initial;
       border: 1px black solid;
       border-radius: 4px;
       background-image: linear-gradient(to right, #fabfb7, #fdf9c4);
-      padding: 3px; }
+      padding: 3px;
+      font-size: 1rem;
+      letter-spacing: 1px;
+      transition: 0.2s; }
       #seccionExperiencia div .sobreNosotros a:hover {
         padding: 5px; }
   #seccionExperiencia figure {
@@ -214,7 +218,7 @@ footer {
     font-family: 'Roboto', sans-serif;
     line-height: 1.6;
     display: flex;
-    flex-flow: row wrap;
+    flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
     padding: 50px 15px 35px 20px; }
@@ -228,20 +232,29 @@ footer {
         text-align: center;
         padding-bottom: 10px; }
     #seccionUno .biografia figure img {
+      border-radius: 20px;
       width: 400px; }
+
+.fondoBio {
+  background-color: #ffda9e; }
 
 #titulos {
   background-color: #ffda9e;
   display: grid;
-  grid-template-areas: "tituloYoga descripcionYoga" "tituloStretching descripcionStretching" "tituloNutricion descripcionNutricion" "tituloCongreso descripcionCongreso"; }
+  align-items: center;
+  grid-template-areas: "tituloYoga descripcionYoga" "descripcionStretching tituloStretching" "tituloNutricion descripcionNutricion" "descripcionCongreso tituloCongreso"; }
   #titulos .descripcion {
-    margin-top: 180px;
-    padding: 0px 30px 0px 30px; }
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-left: 40px;
+    font-family: 'Roboto', sans-serif;
+    width: 580px; }
     #titulos .descripcion h3 {
-      font-size: 1.5rem; }
-    #titulos .descripcion p, #titulos .descripcion h3 {
       font-family: 'Roboto', sans-serif;
-      padding: 0px 0px 10px 25px; }
+      font-size: 1.5rem; }
+    #titulos .descripcion p {
+      font-family: 'Roboto', sans-serif; }
   #titulos .yogaBio {
     grid-area: descripcionYoga; }
   #titulos .tituloYoga {
@@ -257,10 +270,18 @@ footer {
   #titulos .congreso {
     grid-area: descripcionCongreso; }
   #titulos .tituloCongreso {
-    grid-area: tituloCongreso; }
+    grid-area: tituloCongreso;
+    margin-bottom: 20px; }
+  #titulos .tituloYoga, #titulos .tituloStretching, #titulos .tituloNutricion, #titulos .tituloCongreso {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; }
   #titulos img {
-    margin: 20px 25px 10px 45px;
-    width: 650px; }
+    border: 1px black solid;
+    box-shadow: 5px 5px 10px;
+    border-radius: 20px;
+    opacity: 70%;
+    width: 580px; }
 
 /* CLASES */
 #seccionDos {
@@ -289,7 +310,7 @@ footer {
         width: 500px; }
     #seccionDos .clases div {
       width: 750px;
-      padding: 0px 20px 0px 20px; }
+      padding: 0px 10px 0px 30px; }
       #seccionDos .clases div h3 {
         font-family: 'Whisper', cursive;
         font-size: 2rem;
@@ -336,6 +357,9 @@ footer {
     #mainHorarios .horarios table {
       padding: 10px 50px 10px 50px;
       width: 900px; }
+      #mainHorarios .horarios table td {
+        width: 150px;
+        font-size: 0.8rem; }
     #mainHorarios .horarios div {
       width: 300px; }
   #mainHorarios .aclaraciones {
@@ -376,8 +400,8 @@ footer {
     grid-area: frente;
     background-color: #fdf9c4;
     padding-left: 50px; }
-    #mainContacto .frente p, #mainContacto .frente #titulos .descripcion h3, #titulos .descripcion #mainContacto .frente h3 {
-      padding: 50px 30px 30px 0px;
+    #mainContacto .frente p {
+      padding: 50px 30px 20px 0px;
       font-family: 'Roboto', sans-serif; }
     #mainContacto .frente img {
       width: 550px; }
@@ -389,7 +413,14 @@ footer {
     #mainContacto #formulario h3 {
       font-family: 'Whisper', cursive;
       font-size: 2rem;
-      padding-bottom: 15px; }
+      padding: 0px 0px 15px 15px; }
+    #mainContacto #formulario form .botonForm {
+      text-transform: initial;
+      border: 1px black solid;
+      border-radius: 4px;
+      padding: 3px;
+      font-size: 1rem;
+      letter-spacing: 1px; }
 
 @media (max-width: 1023px) {
   /* index */
@@ -400,13 +431,17 @@ footer {
     #seccionExperiencia div {
       width: 100%; }
   /* biografia */
+  .biografia {
+    flex-wrap: wrap; }
   #titulos {
     background-color: #ffda9e;
     display: grid;
     grid-template-areas: "descripcionYoga" "tituloYoga" "descripcionStretching" "tituloStretching" "descripcionNutricion" "tituloNutricion" "descripcionCongreso" "tituloCongreso"; }
     #titulos .descripcion {
-      margin-top: 10px;
-      max-width: 90%; }
+      margin-top: 30px;
+      width: 90%; }
+    #titulos .tituloYoga, #titulos .tituloStretching, #titulos .tituloNutricion, #titulos .tituloCongreso {
+      margin-top: 0px; }
     #titulos img {
       max-width: 90%; }
   #seccionUno .biografia figure {
@@ -453,7 +488,9 @@ footer {
       #mainContacto .contacto iframe {
         max-inline-size: 90%; }
     #mainContacto .frente {
-      display: none; } }
+      display: none; }
+    #mainContacto #formulario {
+      padding-left: 10px; } }
 
 @media (max-width: 600px) {
   .logo {
@@ -461,25 +498,24 @@ footer {
   header .tituloLogo h1 {
     font-size: 1.3rem; }
   .barraNavegacion a {
-    font-size: 0.6rem; }
+    font-size: 0.9rem; }
   .indexFondo h2 {
     padding-top: 10px;
     font-size: 1.5rem; }
   footer h4 {
-    padding: 10px 0px 10px 10px;
+    padding: 15px 0px 10px 5px;
     font-size: 1.3rem; }
   .direccion {
-    padding: 10px 0px 10px 0px; }
-  /* biografia */
-  #titulos .tituloYoga,
-  .tituloStretching,
-  .tituloNutricion,
-  .tituloCongreso {
-    padding-right: 40px; }
+    padding: 10px 0px 10px 0px;
+    font-size: 90%; }
+  /* Biografia */
+  #titulos .descripcion {
+    font-size: 90%;
+    margin-left: 20px; }
   /* horarios */
   #mainHorarios .tituloHorarios {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     height: 70px;
-    padding-top: 5px; }
+    padding-top: 20px; }
   #mainHorarios .aclaraciones {
     padding: 30px 40px 30px 30px; } }
