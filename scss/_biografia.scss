@@ -18,6 +18,7 @@
         padding: 50px 15px 35px 20px;
 
         div {
+            text-align: justify;
             width: 800px;
             order: 2;
             margin: 10px 30px 20px 30px;
@@ -64,6 +65,7 @@
         h3 {
             font-family: 'Roboto', sans-serif;
             font-size: 1.5rem;  
+            text-shadow: 4px 4px 5px;
         }
         
         p {
@@ -108,15 +110,23 @@
         display: flex;
         justify-content: center;
         margin-top: 20px;
-    }
 
-    img {
-        border: 1px black solid;
-        box-shadow: 5px 5px 10px;
-        border-radius: 20px;
-        opacity: 70%;
-        width: 580px
-    } 
+        img {
+            border: 1px black solid;
+            box-shadow: 5px 5px 10px;
+            border-radius: 20px;
+            opacity: 70%;
+            width: 580px;
+            transition: 0.2s;
+        } 
+
+        &:hover {
+            img {
+                opacity: 100%;
+                width: 585px;
+            }
+        }
+    }
 }
 
 

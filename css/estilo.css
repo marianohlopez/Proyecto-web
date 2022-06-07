@@ -25,6 +25,7 @@ a {
   background-color: #2BB741;
   padding: 12px;
   opacity: 80%;
+  box-shadow: 2px 2px 5px;
   transition: 0.4s; }
   .botonWhatsApp img:hover {
     opacity: 100%;
@@ -101,6 +102,7 @@ footer {
   background-size: cover;
   height: 800px;
   opacity: 90%;
+  border-bottom: #ffda9e 8px solid;
   animation-name: titulo;
   animation-duration: 2s;
   animation-iteration-count: 1; }
@@ -144,6 +146,8 @@ footer {
     border-radius: 15px;
     line-height: 1.6;
     box-shadow: 5px 5px 10px; }
+    .actividades .actividadTalleres h3 {
+      text-shadow: 4px 4px 5px; }
     .actividades .actividadTalleres ul {
       padding: 0px 5px 0px 5px;
       list-style-type: none; }
@@ -152,6 +156,7 @@ footer {
     font-family: 'Roboto', sans-serif;
     font-size: 1rem;
     text-align: center;
+    text-shadow: 4px 4px 5px;
     border: 1px solid black;
     border-radius: 15px;
     margin: 20px;
@@ -184,6 +189,7 @@ footer {
       font-size: 2.5rem;
       padding: 10px; }
     #seccionExperiencia div p {
+      text-align: justify;
       padding-bottom: 15px; }
     #seccionExperiencia div .sobreNosotros a {
       font-style: italic;
@@ -196,11 +202,13 @@ footer {
       letter-spacing: 1px;
       transition: 0.2s; }
       #seccionExperiencia div .sobreNosotros a:hover {
+        box-shadow: 1px 1px 5px;
         padding: 5px; }
   #seccionExperiencia figure {
     margin: 20px 10px 10px 35px;
     order: 1; }
     #seccionExperiencia figure img {
+      box-shadow: 5px 5px 6px;
       border-radius: 30px;
       max-width: 90%; }
 
@@ -223,6 +231,7 @@ footer {
     align-items: center;
     padding: 50px 15px 35px 20px; }
     #seccionUno .biografia div {
+      text-align: justify;
       width: 800px;
       order: 2;
       margin: 10px 30px 20px 30px; }
@@ -252,7 +261,8 @@ footer {
     width: 580px; }
     #titulos .descripcion h3 {
       font-family: 'Roboto', sans-serif;
-      font-size: 1.5rem; }
+      font-size: 1.5rem;
+      text-shadow: 4px 4px 5px; }
     #titulos .descripcion p {
       font-family: 'Roboto', sans-serif; }
   #titulos .yogaBio {
@@ -276,12 +286,16 @@ footer {
     display: flex;
     justify-content: center;
     margin-top: 20px; }
-  #titulos img {
-    border: 1px black solid;
-    box-shadow: 5px 5px 10px;
-    border-radius: 20px;
-    opacity: 70%;
-    width: 580px; }
+    #titulos .tituloYoga img, #titulos .tituloStretching img, #titulos .tituloNutricion img, #titulos .tituloCongreso img {
+      border: 1px black solid;
+      box-shadow: 5px 5px 10px;
+      border-radius: 20px;
+      opacity: 70%;
+      width: 580px;
+      transition: 0.2s; }
+    #titulos .tituloYoga:hover img, #titulos .tituloStretching:hover img, #titulos .tituloNutricion:hover img, #titulos .tituloCongreso:hover img {
+      opacity: 100%;
+      width: 585px; }
 
 /* CLASES */
 #seccionDos {
@@ -307,8 +321,10 @@ footer {
       display: flex;
       justify-content: center; }
       #seccionDos .clases .imagenClases img {
-        width: 500px; }
+        width: 500px;
+        border-radius: 30px; }
     #seccionDos .clases div {
+      text-align: justify;
       width: 750px;
       padding: 0px 10px 0px 30px; }
       #seccionDos .clases div h3 {
@@ -420,7 +436,11 @@ footer {
       border-radius: 4px;
       padding: 3px;
       font-size: 1rem;
-      letter-spacing: 1px; }
+      letter-spacing: 1px;
+      transition: 0.2s; }
+      #mainContacto #formulario form .botonForm:hover {
+        background-image: linear-gradient(to right, #fabfb7, white);
+        box-shadow: 1px 1px 6px; }
 
 @media (max-width: 1023px) {
   /* index */
@@ -442,8 +462,8 @@ footer {
       width: 90%; }
     #titulos .tituloYoga, #titulos .tituloStretching, #titulos .tituloNutricion, #titulos .tituloCongreso {
       margin-top: 0px; }
-    #titulos img {
-      max-width: 90%; }
+      #titulos .tituloYoga img, #titulos .tituloStretching img, #titulos .tituloNutricion img, #titulos .tituloCongreso img {
+        max-width: 90%; }
   #seccionUno .biografia figure {
     margin-bottom: 20px; }
   #seccionUno h2,

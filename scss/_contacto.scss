@@ -65,6 +65,12 @@
                 padding: 3px;
                 font-size: 1rem;
                 letter-spacing: 1px;
+                transition: 0.2s;
+                
+                &:hover {
+                    background-image: linear-gradient(to right, #fabfb7, white);
+                    box-shadow: 1px 1px 6px;
+                }
             }
         }
     }
