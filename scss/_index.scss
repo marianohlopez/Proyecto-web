@@ -5,7 +5,6 @@
     background-size: cover;
     height: 800px;
     opacity: 90%;
-    border-bottom: $color-fondo-2 8px solid;
     animation-name: titulo;
     animation-duration: 2s;
     animation-iteration-count: 1;
@@ -40,66 +39,62 @@
         text-align: center;
         font-size: 2.5rem;
         padding: 10px;
+        text-shadow: 4px 4px 5px;
     }
 
     h3 {
         font-size: 1.75rem;
-    }
-}
-
-
-.actividades {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-evenly;
-    align-items: center;
-
-    .actividadTalleres {
-        background-color: white;
-        font-family: 'Roboto', sans-serif;
-        font-size: 1.25rem;
-        text-align: center;
-        border: 1px solid black;
-        margin: 20px;
-        padding: 10px 50px 6px 50px;
-        border-radius: 15px;
-        line-height: 1.6;
-        box-shadow: 5px 5px 10px;
-
-        h3 {
-            text-shadow: 4px 4px 5px;
-        }
-
-        ul {
-            padding: 0px 5px 0px 5px;
-            list-style-type: none;
-        }
-    }
-
-    .actividad {
-        background-color: white;
-        font-family: 'Roboto', sans-serif;
-        font-size: 1rem;
-        text-align: center;
         text-shadow: 4px 4px 5px;
-        border: 1px solid black;
-        border-radius: 15px;
-        margin: 20px;
-        padding: 10px;
-        box-shadow: 5px 5px 10px;
     }
 
-    .yoga {
-        img {
-            opacity: 85%;
-            max-width: 90%;
+    .actividades {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+        align-items: center;
+    
+        .actividadTalleres {
+            background-color: white;
+            font-family: 'Roboto', sans-serif;
+            font-size: 1.25rem;
+            text-align: center;
+            border: 1px solid black;
+            margin: 20px;
+            padding: 10px 50px 6px 50px;
+            border-radius: 15px;
+            line-height: 1.6;
+            box-shadow: 5px 5px 10px;
+    
+            ul {
+                padding: 0px 5px 0px 5px;
+                list-style-type: none;
+            }
         }
-    }
-
-    .stretching {
-        img {
-            opacity: 85%;
-            max-width: 90%;
+    
+        .actividad {
+            background-color: white;
+            font-family: 'Roboto', sans-serif;
+            font-size: 1rem;
+            text-align: center;
+            border: 1px solid black;
+            border-radius: 15px;
+            margin: 20px;
+            padding: 10px;
+            box-shadow: 5px 5px 10px;
+        }
+    
+        .yoga {
+            img {
+                opacity: 85%;
+                max-width: 90%;
+            }
+        }
+    
+        .stretching {
+            img {
+                opacity: 85%;
+                max-width: 90%;
+            }
         }
     }
 }
@@ -125,6 +120,7 @@
             text-align: center;
             font-size: 2.5rem;
             padding: 10px;
+            text-shadow: 4px 4px 5px;
         }
 
         p {
@@ -157,9 +153,9 @@
         order: 1;
 
         img {
-            box-shadow: 5px 5px 6px;
             border-radius: 30px;
             max-width: 90%;
+            box-shadow: 5px 5px 5px;
         }
     }
 }

@@ -30,11 +30,12 @@ a {
         padding: 12px;
         opacity: 80%;
         box-shadow: 2px 2px 5px;
-        transition: 0.4s;
+        transition: 0.2s;
 
         &:hover {
             opacity: 100%;
             background-color: #24e755;
+            width: 65px;
         }
     }
 }

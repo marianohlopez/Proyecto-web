@@ -28,13 +28,15 @@
                 font-size: 2rem;
                 text-align: center;
                 padding-bottom: 10px;
+                text-shadow: 4px 4px 5px;
             }
         }
 
         figure {
             img {
                 border-radius: 20px;
-                width: 400px
+                width: 400px;
+                box-shadow: 5px 5px 5px;
             }
         }
     }
@@ -65,7 +67,7 @@
         h3 {
             font-family: 'Roboto', sans-serif;
             font-size: 1.5rem;  
-            text-shadow: 4px 4px 5px;
+            text-shadow: 6px 6px 5px;
         }
         
         p {
@@ -113,7 +115,6 @@
 
         img {
             border: 1px black solid;
-            box-shadow: 5px 5px 10px;
             border-radius: 20px;
             opacity: 70%;
             width: 580px;
@@ -124,6 +125,7 @@
             img {
                 opacity: 100%;
                 width: 585px;
+                box-shadow: 5px 5px 10px;
             }
         }
     }

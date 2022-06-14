@@ -26,10 +26,11 @@ a {
   padding: 12px;
   opacity: 80%;
   box-shadow: 2px 2px 5px;
-  transition: 0.4s; }
+  transition: 0.2s; }
   .botonWhatsApp img:hover {
     opacity: 100%;
-    background-color: #24e755; }
+    background-color: #24e755;
+    width: 65px; }
 
 /* HEADER */
 header {
@@ -89,12 +90,18 @@ footer {
     footer .botones .botonFacebook {
       display: inline-block; }
       footer .botones .botonFacebook img {
-        width: 70px; }
+        width: 70px;
+        transition: 0.2s; }
+        footer .botones .botonFacebook img:hover {
+          width: 75px; }
     footer .botones .botonInstagram {
       display: inline-block; }
       footer .botones .botonInstagram img {
         width: 80px;
-        padding-bottom: 5.5px; }
+        padding-bottom: 5.5px;
+        transition: 0.2s; }
+        footer .botones .botonInstagram img:hover {
+          width: 85px; }
 
 /* INICIO/INDEX */
 .indexFondo {
@@ -102,7 +109,6 @@ footer {
   background-size: cover;
   height: 800px;
   opacity: 90%;
-  border-bottom: #ffda9e 8px solid;
   animation-name: titulo;
   animation-duration: 2s;
   animation-iteration-count: 1; }
@@ -126,48 +132,46 @@ footer {
     font-family: 'Whisper', cursive;
     text-align: center;
     font-size: 2.5rem;
-    padding: 10px; }
-  #seccionActividades h3 {
-    font-size: 1.75rem; }
-
-.actividades {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-evenly;
-  align-items: center; }
-  .actividades .actividadTalleres {
-    background-color: white;
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.25rem;
-    text-align: center;
-    border: 1px solid black;
-    margin: 20px;
-    padding: 10px 50px 6px 50px;
-    border-radius: 15px;
-    line-height: 1.6;
-    box-shadow: 5px 5px 10px; }
-    .actividades .actividadTalleres h3 {
-      text-shadow: 4px 4px 5px; }
-    .actividades .actividadTalleres ul {
-      padding: 0px 5px 0px 5px;
-      list-style-type: none; }
-  .actividades .actividad {
-    background-color: white;
-    font-family: 'Roboto', sans-serif;
-    font-size: 1rem;
-    text-align: center;
-    text-shadow: 4px 4px 5px;
-    border: 1px solid black;
-    border-radius: 15px;
-    margin: 20px;
     padding: 10px;
-    box-shadow: 5px 5px 10px; }
-  .actividades .yoga img {
-    opacity: 85%;
-    max-width: 90%; }
-  .actividades .stretching img {
-    opacity: 85%;
-    max-width: 90%; }
+    text-shadow: 4px 4px 5px; }
+  #seccionActividades h3 {
+    font-size: 1.75rem;
+    text-shadow: 4px 4px 5px; }
+  #seccionActividades .actividades {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center; }
+    #seccionActividades .actividades .actividadTalleres {
+      background-color: white;
+      font-family: 'Roboto', sans-serif;
+      font-size: 1.25rem;
+      text-align: center;
+      border: 1px solid black;
+      margin: 20px;
+      padding: 10px 50px 6px 50px;
+      border-radius: 15px;
+      line-height: 1.6;
+      box-shadow: 5px 5px 10px; }
+      #seccionActividades .actividades .actividadTalleres ul {
+        padding: 0px 5px 0px 5px;
+        list-style-type: none; }
+    #seccionActividades .actividades .actividad {
+      background-color: white;
+      font-family: 'Roboto', sans-serif;
+      font-size: 1rem;
+      text-align: center;
+      border: 1px solid black;
+      border-radius: 15px;
+      margin: 20px;
+      padding: 10px;
+      box-shadow: 5px 5px 10px; }
+    #seccionActividades .actividades .yoga img {
+      opacity: 85%;
+      max-width: 90%; }
+    #seccionActividades .actividades .stretching img {
+      opacity: 85%;
+      max-width: 90%; }
 
 #seccionExperiencia {
   background-color: #ffda9e;
@@ -187,7 +191,8 @@ footer {
       font-family: 'Whisper', cursive;
       text-align: center;
       font-size: 2.5rem;
-      padding: 10px; }
+      padding: 10px;
+      text-shadow: 4px 4px 5px; }
     #seccionExperiencia div p {
       text-align: justify;
       padding-bottom: 15px; }
@@ -208,9 +213,9 @@ footer {
     margin: 20px 10px 10px 35px;
     order: 1; }
     #seccionExperiencia figure img {
-      box-shadow: 5px 5px 6px;
       border-radius: 30px;
-      max-width: 90%; }
+      max-width: 90%;
+      box-shadow: 5px 5px 5px; }
 
 /* BIOGRAFIA */
 #seccionUno {
@@ -239,10 +244,12 @@ footer {
         font-family: 'Whisper', cursive;
         font-size: 2rem;
         text-align: center;
-        padding-bottom: 10px; }
+        padding-bottom: 10px;
+        text-shadow: 4px 4px 5px; }
     #seccionUno .biografia figure img {
       border-radius: 20px;
-      width: 400px; }
+      width: 400px;
+      box-shadow: 5px 5px 5px; }
 
 .fondoBio {
   background-color: #ffda9e; }
@@ -262,7 +269,7 @@ footer {
     #titulos .descripcion h3 {
       font-family: 'Roboto', sans-serif;
       font-size: 1.5rem;
-      text-shadow: 4px 4px 5px; }
+      text-shadow: 6px 6px 5px; }
     #titulos .descripcion p {
       font-family: 'Roboto', sans-serif; }
   #titulos .yogaBio {
@@ -288,14 +295,14 @@ footer {
     margin-top: 20px; }
     #titulos .tituloYoga img, #titulos .tituloStretching img, #titulos .tituloNutricion img, #titulos .tituloCongreso img {
       border: 1px black solid;
-      box-shadow: 5px 5px 10px;
       border-radius: 20px;
       opacity: 70%;
       width: 580px;
       transition: 0.2s; }
     #titulos .tituloYoga:hover img, #titulos .tituloStretching:hover img, #titulos .tituloNutricion:hover img, #titulos .tituloCongreso:hover img {
       opacity: 100%;
-      width: 585px; }
+      width: 585px;
+      box-shadow: 5px 5px 10px; }
 
 /* CLASES */
 #seccionDos {
@@ -322,7 +329,8 @@ footer {
       justify-content: center; }
       #seccionDos .clases .imagenClases img {
         width: 500px;
-        border-radius: 30px; }
+        border-radius: 30px;
+        box-shadow: 5px 5px 5px; }
     #seccionDos .clases div {
       text-align: justify;
       width: 750px;
@@ -331,7 +339,8 @@ footer {
         font-family: 'Whisper', cursive;
         font-size: 2rem;
         text-align: center;
-        padding-bottom: 10px; }
+        padding-bottom: 10px;
+        text-shadow: 4px 4px 5px; }
   #seccionDos .beneficios {
     display: flex;
     flex-direction: row-reverse;
@@ -351,7 +360,8 @@ footer {
       #seccionDos .beneficios .beneficiosYoga h3 {
         font-family: 'Whisper', cursive;
         font-size: 2rem;
-        padding-bottom: 10px; }
+        padding-bottom: 10px;
+        text-shadow: 4px 4px 5px; }
 
 /* HORARIOS */
 #mainHorarios {
@@ -390,7 +400,8 @@ footer {
     #mainHorarios .aclaraciones h3 {
       font-family: 'Whisper', cursive;
       font-size: 2rem;
-      padding-left: 40px; }
+      padding-left: 40px;
+      text-shadow: 4px 4px 5px; }
 
 /* CONTACTO */
 #mainContacto {
@@ -429,7 +440,8 @@ footer {
     #mainContacto #formulario h3 {
       font-family: 'Whisper', cursive;
       font-size: 2rem;
-      padding: 0px 0px 15px 15px; }
+      padding: 0px 0px 15px 15px;
+      text-shadow: 4px 4px 5px; }
     #mainContacto #formulario form .botonForm {
       text-transform: initial;
       border: 1px black solid;
@@ -519,15 +531,16 @@ footer {
     font-size: 1.3rem; }
   .barraNavegacion a {
     font-size: 0.9rem; }
-  .indexFondo h2 {
-    padding-top: 10px;
-    font-size: 1.5rem; }
   footer h4 {
     padding: 15px 0px 10px 5px;
     font-size: 1.3rem; }
   .direccion {
     padding: 10px 0px 10px 0px;
     font-size: 90%; }
+  /* Index */
+  .indexFondo h2 {
+    padding-top: 10px;
+    font-size: 1.5rem; }
   /* Biografia */
   #titulos .descripcion {
     font-size: 90%;

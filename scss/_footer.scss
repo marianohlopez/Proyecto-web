@@ -29,6 +29,11 @@ footer {
 
             img {
                 width: 70px;
+                transition: 0.2s;
+
+                &:hover {
+                    width: 75px;
+                }
             }
         }
         
@@ -38,6 +43,11 @@ footer {
             img {
                 width: 80px;
                 padding-bottom: 5.5px;
+                transition: 0.2s;
+
+                &:hover {
+                    width: 85px;
+                }
             }
         }  
     }
